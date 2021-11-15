@@ -4,5 +4,5 @@
 function invite_more_women(array $a): bool {
 	$woman = count(array_filter($a, fn($x) => $x == -1));
 	$man = count(array_filter($a, fn($x) => $x == 1));
-	return $woman < $man ;
+	return $woman < $man;
 }
